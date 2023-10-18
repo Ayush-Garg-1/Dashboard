@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* CSS Code For Left Part of Dashboar */
+.dashboard-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.left-dashboard {
+  width: 18%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding: 30px;
+  color: white;
+  background-color: rgb(2, 2, 38);
+}
+.top-heading {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+}
+.top-heading .itag {
+  font-size: 26px;
+}
+.top-heading h1 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.flex-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+  margin-top: 11px;
+  position: relative;
+}
+.flex-box i:first-child {
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+.flex-box p {
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.flex-box i:last-child {
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  cursor: pointer;
+}
+.active {
+  padding: 11px;
+  border-radius: 8px;
+  background-color: rgb(245, 239, 239, 0.2);
+}
+.user {
+  width: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  gap: 25px;
+  padding: 10px;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+.user-info h3 {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.user-info p {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.user i {
+  cursor: pointer;
+}
+.user img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* CSS Code For Right Part of Dashboar */
+.right-dashboard {
+  width: 82%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  padding: 25px 30px;
+  background-color: rgba(113, 106, 106, 0.1);
+}
+.top_navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.top_navbar p {
+  font-weight: bold;
+  font-size: 18px;
+}
+.search-bar {
+  background-color: white;
+  padding: 8px 11px;
+  border-radius: 8px;
+}
+.search-bar i {
+  color: gray;
+}
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 7px;
+}
+::placeholder {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.top-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  justify-content: space-around;
+  align-items: center;
+}
+.box1 {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0px 0px 5px whitesmoke;
+}
+.box1 i {
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: green;
+  background-color: rgb(0, 128, 0, 0.3);
+}
+.info-box {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+.info-box p {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.info-box span {
+  color: green;
+}
+.info-box h1 {
+  color: black;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* Chart Section */
+.chart-section {
+  display: flex;
+}
+.overview-section {
+  width: 60%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* bar Chart section*/
+.overview-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-box {
+  width: 30%;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(128, 128, 128, 0.1);
+}
+/* Bar chart container */
+.bar-box {
+  width: 100%;
+}
+.chart {
+  width: 100%;
+  display: flex;
+  gap: 21px;
+  transform: rotate(180deg);
+}
+/* Bar styles */
+.bar {
+  width: 80px;
+  border-radius: 8px;
+  background-color: rgba(171, 46, 213, 0.2);
+  margin: 5px 0;
+  transition: width 1s ease-in-out;
+}
+/* Bar lable box */
+.bar-lable-box {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+}
+/* Bar labels */
+.bar-label {
+  width: 100%;
+  font-size: 14px;
+  margin: 5px 0;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.customers-section {
+  width: 36%;
+  border-radius: 11px;
+  margin-left: 51px;
+  background-color: rgb(173, 163, 163, 0.1);
+  padding: 25px;
+}
+.chart-section h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+.customer-chart {
+  width: 70%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+.pi-chart {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px;
+  border: 20px solid rgb(161, 133, 234, 0.3);
+  border-radius: 50%;
+  position: relative;
+}
+.pi-chart h2 {
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.pi-chart::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 10px;
+  border-radius: 50%;
+  border: 20px solid red;
+}
+.product-sell-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    background-color: white;
+    border-radius: 11px;
+    padding: 20px;
+}
+.reuse-flex1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.reuse-flex2{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+.product img{
+    width: 100px;
+    height: 60px;
+    border-radius: 6px;
+}
